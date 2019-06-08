@@ -1,9 +1,7 @@
 ﻿namespace EFCodeFirstDLL
 {
     using EF_CodeFirst.DataModel;
-    using System;
     using System.Data.Entity;
-    using System.Linq;
 
     public class DataContext : DbContext
     {
@@ -18,5 +16,4 @@
         public virtual DbSet<ArticleFirstType> ArticleFirstTypes { get; set; }
         public virtual DbSet<ArticleSecondType> ArticleSecondTypes { get; set; }
     }
-
 }
