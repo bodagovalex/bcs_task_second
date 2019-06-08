@@ -24,11 +24,9 @@ namespace EF_CodeFirst.DataModel
         [StringLength(50)]
         public string Type { get; set; }
 
-        //public int ArticleFirstTypeFK { get; set; }
         [ForeignKey("ArticleFirstType")]
         public virtual ArticleFirstType ArticleFirstType { get; set; }
 
-        //public int ArticleSecondTypeFK { get; set; }
         [ForeignKey("ArticleSecondType")]
         public virtual ArticleSecondType ArticleSecondType { get; set; }
     }
